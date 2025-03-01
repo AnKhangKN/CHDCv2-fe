@@ -13,7 +13,7 @@ function App() {
             let Layout;
             
             // Kiểm tra nếu route có `isShowHeader`, thì dùng `DefaultComponent`
-            if (route.isShowHeader) {
+            if (route.isShowHeader && route.isShowFooter) {
               Layout = DefaultComponent;
             } else {
               Layout = Fragment; // Nếu không, dùng React.Fragment

@@ -9,17 +9,20 @@ export const routes = [
     {
         path: '/',
         page: HomePage,
-        isShowHeader: true
+        isShowHeader: true,
+        isShowFooter: true
     },
     {
         path: '/order',
         page: OrderPage,
-        isShowHeader: true
+        isShowHeader: true,
+        isShowFooter: true
     },
     {
         path: '/products',
         page: ProductsPage,
-        isShowHeader: true
+        isShowHeader: true,
+        isShowFooter: true
     },
     {
         path: '*',
