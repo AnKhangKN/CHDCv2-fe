@@ -16,6 +16,9 @@ export const ListTopHeader = styled.ul`
     display: flex;
     justify-content: flex-end;
     height: 36px;
+    padding-right: 6px;
+    font-size: 13px;
+    font-weight: bold;
 `
 
 export const WrapperHeader = styled.div`
@@ -32,3 +35,41 @@ export const WrapperSubHeader = styled.div`
 
 `
 
+export const DesktopCategory = styled.ul`
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+`
+
+export const SearchButton = styled.div`
+    height: 36px;
+    width: 170px;
+    background-color: #F5F5F5;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+`
+
+export const IconButton = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%; /* Làm nút bo tròn */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1); /* Hiệu ứng nền mờ khi hover */
+    }
+
+    &:active {
+        background-color: rgba(0, 0, 0, 0.2); /* Màu đậm hơn khi click */
+    }
+`;
