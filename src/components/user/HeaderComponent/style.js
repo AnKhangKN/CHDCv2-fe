@@ -45,16 +45,6 @@ export const DesktopCategory = styled.ul`
     font-weight: 600;
 `
 
-export const SearchButton = styled.div`
-    height: 36px;
-    width: 170px;
-    background-color: #F5F5F5;
-    border-radius: 18px;
-    display: flex;
-    align-items: center;
-    margin-right: 12px;
-`
-
 export const IconButton = styled.div`
     display: flex;
     justify-content: center;

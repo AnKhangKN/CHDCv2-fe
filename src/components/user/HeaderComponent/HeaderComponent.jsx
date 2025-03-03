@@ -6,12 +6,12 @@ import {
   ListTopHeader, 
   WrapperHeader, 
   WrapperSubHeader,
-  DesktopCategory, 
-  SearchButton,
+  DesktopCategory,
   IconButton
 } from './style.js';
-import { IoSearchOutline, IoBagOutline } from "react-icons/io5";
+import { IoBagOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
+import SearchButton from "../SearchButton/SearchButton.jsx";
 
 const HeaderComponent = () => {
   return (
@@ -38,11 +38,13 @@ const HeaderComponent = () => {
     </WrapperTopHeader>
     <WrapperHeader>
       <Row>
+        
         <Col span={6}>
           <div className="logo-img"> logo
             <img src="" alt="" srcset="" />
           </div>
         </Col>
+
         <Col span={12} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <DesktopCategory>
             <li style={{padding: '0px 12px'}}> <Link to="/" style={{color: '#333'}}>Trang chủ</Link> </li>
@@ -51,19 +53,23 @@ const HeaderComponent = () => {
             <li style={{padding: '0px 12px'}}> <Link to="/new" style={{color: '#333'}}>Mới nhất</Link> </li>
           </DesktopCategory>
         </Col>
+
         <Col span={6} style={{fontSize: '24px', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', paddingRight: '8px'}}>
-          <SearchButton>
+          
+          <SearchButton />
+            
+          <Link to="/favorite" style={{color: '#333'}}>
             <IconButton>
-              <IoSearchOutline />
+              <IoMdHeartEmpty />
             </IconButton>
-            <span style={{fontSize: '18px'}}>Tìm kiếm</span>
-          </SearchButton>
-          <IconButton>
-            <IoMdHeartEmpty />
-          </IconButton>
-          <IconButton style={{fontSize: '22px'}}>
-            <IoBagOutline />
-          </IconButton>
+          </Link>
+          
+          <Link to="/cart" style={{color: '#333'}}>
+            <IconButton style={{fontSize: '22px'}}>
+              <IoBagOutline />
+            </IconButton>
+          </Link>
+          
         </Col>
       </Row>
       
