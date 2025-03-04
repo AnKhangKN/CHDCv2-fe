@@ -4,6 +4,9 @@ import {
   IconButton,
   ContainerSearchButton,
   ContainerSearchInput,
+  ContainerInput,
+  TextInput,
+  ContainerSearchResult,
 } from "./style";
 import { Col, Row } from "antd";
 
@@ -25,23 +28,17 @@ const SearchButton = () => {
       {/* Search input (chỉ hiển thị khi isVisible = true) */}
       {isVisible && (
         <ContainerSearchInput style={{ display: "flex" }}>
-          <Row style={{ width: "100%" }}>
-            <Col span={4}>Logo</Col>
+          <Row style={{ width: "90%" }}>
+            <Col span={4}>
+              <div className="logo"> anh Logo</div>
+            </Col>
             <Col span={16}>
-              <div
-                className=""
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  width: "100%",
-                }}
-              >
-                <input
-                  type="text"
-                  style={{ width: "100%" }}
-                  placeholder="Nhập từ khóa..."
-                />
-              </div>
+              <ContainerInput>
+                <IconButton style={{ position: "absolute", left: "0px" }}>
+                  <IoSearchOutline />
+                </IconButton>
+                <TextInput type="text" placeholder="Nhập từ khóa..." />
+              </ContainerInput>
             </Col>
             <Col span={4}>
               <div
@@ -56,6 +53,13 @@ const SearchButton = () => {
             </Col>
           </Row>
         </ContainerSearchInput>
+      )}
+
+      {/* Search result */}
+      {isVisible && (
+        <ContainerSearchResult>
+          <p>Đề xuất</p>
+        </ContainerSearchResult>
       )}
     </>
   );
