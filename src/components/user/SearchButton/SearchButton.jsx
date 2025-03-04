@@ -5,6 +5,7 @@ import {
   ContainerSearchButton,
   ContainerSearchInput,
 } from "./style";
+import { Col, Row } from "antd";
 
 const SearchButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,11 +25,36 @@ const SearchButton = () => {
       {/* Search input (chỉ hiển thị khi isVisible = true) */}
       {isVisible && (
         <ContainerSearchInput style={{ display: "flex" }}>
-          <input type="text" placeholder="Nhập từ khóa..." />
-          <IconButton onClick={() => setIsVisible(false)}>
-            {/* Đóng input */}
-            <IoCloseSharp />
-          </IconButton>
+          <Row style={{ width: "100%" }}>
+            <Col span={4}>Logo</Col>
+            <Col span={16}>
+              <div
+                className=""
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  width: "100%",
+                }}
+              >
+                <input
+                  type="text"
+                  style={{ width: "100%" }}
+                  placeholder="Nhập từ khóa..."
+                />
+              </div>
+            </Col>
+            <Col span={4}>
+              <div
+                className=""
+                style={{ display: "flex", justifyContent: "flex-end" }}
+              >
+                <IconButton onClick={() => setIsVisible(false)}>
+                  {/* Đóng input */}
+                  <IoCloseSharp />
+                </IconButton>
+              </div>
+            </Col>
+          </Row>
         </ContainerSearchInput>
       )}
     </>

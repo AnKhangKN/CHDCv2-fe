@@ -32,7 +32,6 @@ export const IconButton = styled.div`
 export const ContainerSearchInput = styled.div`
     position: fixed;
     display: none;
-    // display: flex;
     justify-content: center;
     top: 0;
     left: 0;
