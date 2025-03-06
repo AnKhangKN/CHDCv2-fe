@@ -25,17 +25,17 @@ const FooterComponent = () => {
       <Col xs={{ span: 11, offset: 1 }} lg={{ span: 6, offset: 2 }}>
         <ListFooter>
           <li style={{margin: '40px 0px', fontWeight: '500'}}>Trợ giúp</li>
-          <li style={{margin: '20px 0px'}}> <Link>Hướng dẫn mua hàng</Link></li>
-          <li style={{margin: '20px 0px'}}> <Link>Hướng dẫn đăng kí</Link></li>
-          <li style={{margin: '20px 0px'}}> <Link>Chính sách đổi trả</Link></li>
+          <li style={{margin: '20px 0px'}}> <Link style={{color: "#333"}}>Hướng dẫn mua hàng</Link></li>
+          <li style={{margin: '20px 0px'}}> <Link style={{color: "#333"}}>Hướng dẫn đăng kí</Link></li>
+          <li style={{margin: '20px 0px'}}> <Link style={{color: "#333"}}>Chính sách đổi trả</Link></li>
         </ListFooter>
       </Col>
       <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }}>
         <ListFooter>
           <li style={{margin: '40px 0px', fontWeight: '500'}}>Mạng xã hội</li>
-          <li style={{margin: '20px 0px'}}> <Link>Facebook</Link></li>
-          <li style={{margin: '20px 0px'}}> <Link>Instagram</Link></li>
-          <li style={{margin: '20px 0px'}}> <Link>Email</Link></li>
+          <li style={{margin: '20px 0px'}}> <Link style={{color: "#333"}}>Facebook</Link></li>
+          <li style={{margin: '20px 0px'}}> <Link style={{color: "#333"}}>Instagram</Link></li>
+          <li style={{margin: '20px 0px'}}> <Link style={{color: "#333"}}>Email</Link></li>
         </ListFooter>
       </Col>
     </Row>

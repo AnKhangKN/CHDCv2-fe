@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import PromoSubTitle from "../../../components/user/PromoSubTitle/PromoSubTitle";
 
 const ProductsPage = () => {
   return (
-    <div>ProductsPage</div>
-  )
-}
+    <div>
+      <PromoSubTitle />
+    </div>
+  );
+};
 
-export default ProductsPage
+export default ProductsPage;
